@@ -160,142 +160,142 @@ function getArtHtml(item){
 }
 
 /* ---------- Vocabulary (25 per CEFR, tourism-focused) ---------- */
-/* The same curated words used previously, with short sentences and JP gloss */
+/* Each item has a concise English `def` (3-10 words) used as quiz option text */
 const vocab = {
   "A2":[
-    {"id":"A2_01","sdg":1,"word":"hotel","pos":"noun","sentence":"The hotel has simple rooms and friendly staff.","jp":"ホテル","img":"🏨"},
-    {"id":"A2_02","sdg":8,"word":"guide","pos":"noun","sentence":"Ask the guide about the history of the town.","jp":"ガイド","img":"🧭"},
-    {"id":"A2_03","sdg":11,"word":"museum","pos":"noun","sentence":"We visit the museum on the cultural tour.","jp":"博物館","img":"🏛️"},
-    {"id":"A2_04","sdg":12,"word":"recycle","pos":"verb","sentence":"Please recycle plastic bottles at the hotel.","jp":"リサイクルする","img":"♻️"},
-    {"id":"A2_05","sdg":14,"word":"beach","pos":"noun","sentence":"Enjoy the beach but keep it clean.","jp":"ビーチ","img":"🏖️"},
-    {"id":"A2_06","sdg":6,"word":"water","pos":"noun","sentence":"Bring water for the hike in hot weather.","jp":"水","img":"💧"},
-    {"id":"A2_07","sdg":13,"word":"weather","pos":"noun","sentence":"Check the weather forecast before your trip.","jp":"天気","img":"🌤️"},
-    {"id":"A2_08","sdg":8,"word":"job","pos":"noun","sentence":"Many local people work in tourism jobs.","jp":"仕事","img":"💼"},
-    {"id":"A2_09","sdg":11,"word":"festival","pos":"noun","sentence":"The festival shows local music and food.","jp":"祭り","img":"🎎"},
-    {"id":"A2_10","sdg":12,"word":"menu","pos":"noun","sentence":"Look at the menu for local dishes.","jp":"メニュー","img":"📜"},
-    {"id":"A2_11","sdg":2,"word":"local food","pos":"noun","sentence":"Try local food to support farmers.","jp":"地元の食べ物","img":"🍱"},
-    {"id":"A2_12","sdg":1,"word":"donation","pos":"noun","sentence":"The tour asks for a small donation to schools.","jp":"寄付","img":"🎁"},
-    {"id":"A2_13","sdg":15,"word":"forest","pos":"noun","sentence":"We walk a short trail through the forest.","jp":"森","img":"🌳"},
-    {"id":"A2_14","sdg":3,"word":"clinic","pos":"noun","sentence":"There is a small clinic in town for first aid.","jp":"診療所","img":"🏥"},
-    {"id":"A2_15","sdg":9,"word":"road","pos":"noun","sentence":"A new road makes the site easier to reach.","jp":"道路","img":"🛣️"},
-    {"id":"A2_16","sdg":10,"word":"access","pos":"noun","sentence":"The museum has ramp access for wheelchairs.","jp":"アクセス","img":"♿"},
-    {"id":"A2_17","sdg":7,"word":"solar","pos":"adj","sentence":"The eco-lodge uses solar panels for lights.","jp":"太陽光（ソーラー）","img":"🔆"},
-    {"id":"A2_18","sdg":12,"word":"waste","pos":"noun","sentence":"Put trash in the bin to keep areas clean.","jp":"ゴミ","img":"🗑️"},
-    {"id":"A2_19","sdg":11,"word":"ticket","pos":"noun","sentence":"Buy a ticket at the visitor centre.","jp":"チケット","img":"🎟️"},
-    {"id":"A2_20","sdg":4,"word":"tour class","pos":"noun","sentence":"Attend a short tour class to learn local facts.","jp":"ツアークラス","img":"📚"},
-    {"id":"A2_21","sdg":5,"word":"female guide","pos":"noun","sentence":"The female guide explains local traditions.","jp":"女性ガイド","img":"👩‍💼"},
-    {"id":"A2_22","sdg":6,"word":"toilet","pos":"noun","sentence":"Public toilets are next to the station.","jp":"トイレ","img":"🚻"},
-    {"id":"A2_23","sdg":14,"word":"coral","pos":"noun","sentence":"Do not touch the coral when snorkeling.","jp":"サンゴ","img":"🪸"},
-    {"id":"A2_24","sdg":16,"word":"safety","pos":"noun","sentence":"Follow safety rules on the boat trip.","jp":"安全","img":"🦺"},
-    {"id":"A2_25","sdg":17,"word":"partner","pos":"noun","sentence":"The hotel has local partners for community tours.","jp":"パートナー","img":"🤝"}
+    {"id":"A2_01","sdg":1,"word":"hotel","pos":"noun","def":"a building offering paid rooms for travelers","sentence":"The hotel has simple rooms and friendly staff.","jp":"ホテル","img":"🏨"},
+    {"id":"A2_02","sdg":8,"word":"guide","pos":"noun","def":"a person who leads visitors and explains sites","sentence":"Ask the guide about the history of the town.","jp":"ガイド","img":"🧭"},
+    {"id":"A2_03","sdg":11,"word":"museum","pos":"noun","def":"a place displaying historical or cultural objects","sentence":"We visit the museum on the cultural tour.","jp":"博物館","img":"🏛️"},
+    {"id":"A2_04","sdg":12,"word":"recycle","pos":"verb","def":"to process used materials into new products","sentence":"Please recycle plastic bottles at the hotel.","jp":"リサイクルする","img":"♻️"},
+    {"id":"A2_05","sdg":14,"word":"beach","pos":"noun","def":"a sandy or pebbly shore beside the sea","sentence":"Enjoy the beach but keep it clean.","jp":"ビーチ","img":"🏖️"},
+    {"id":"A2_06","sdg":6,"word":"water","pos":"noun","def":"the clear liquid essential for life and drinking","sentence":"Bring water for the hike in hot weather.","jp":"水","img":"💧"},
+    {"id":"A2_07","sdg":13,"word":"weather","pos":"noun","def":"outdoor conditions of temperature, rain, and wind","sentence":"Check the weather forecast before your trip.","jp":"天気","img":"🌤️"},
+    {"id":"A2_08","sdg":8,"word":"job","pos":"noun","def":"a regular activity done in exchange for pay","sentence":"Many local people work in tourism jobs.","jp":"仕事","img":"💼"},
+    {"id":"A2_09","sdg":11,"word":"festival","pos":"noun","def":"a public celebration of local culture and food","sentence":"The festival shows local music and food.","jp":"祭り","img":"🎎"},
+    {"id":"A2_10","sdg":12,"word":"menu","pos":"noun","def":"a list of available food and drink items","sentence":"Look at the menu for local dishes.","jp":"メニュー","img":"📜"},
+    {"id":"A2_11","sdg":2,"word":"local food","pos":"noun","def":"food grown and prepared in the nearby region","sentence":"Try local food to support farmers.","jp":"地元の食べ物","img":"🍱"},
+    {"id":"A2_12","sdg":1,"word":"donation","pos":"noun","def":"a gift of money or goods to support a cause","sentence":"The tour asks for a small donation to schools.","jp":"寄付","img":"🎁"},
+    {"id":"A2_13","sdg":15,"word":"forest","pos":"noun","def":"a large area covered with trees and wildlife","sentence":"We walk a short trail through the forest.","jp":"森","img":"🌳"},
+    {"id":"A2_14","sdg":3,"word":"clinic","pos":"noun","def":"a small facility providing basic medical care","sentence":"There is a small clinic in town for first aid.","jp":"診療所","img":"🏥"},
+    {"id":"A2_15","sdg":9,"word":"road","pos":"noun","def":"a hard surface built for vehicle travel","sentence":"A new road makes the site easier to reach.","jp":"道路","img":"🛣️"},
+    {"id":"A2_16","sdg":10,"word":"access","pos":"noun","def":"the ability to enter or use a place","sentence":"The museum has ramp access for wheelchairs.","jp":"アクセス","img":"♿"},
+    {"id":"A2_17","sdg":7,"word":"solar","pos":"adj","def":"relating to energy from the sun's light","sentence":"The eco-lodge uses solar panels for lights.","jp":"太陽光（ソーラー）","img":"🔆"},
+    {"id":"A2_18","sdg":12,"word":"waste","pos":"noun","def":"unwanted materials or rubbish to be discarded","sentence":"Put trash in the bin to keep areas clean.","jp":"ゴミ","img":"🗑️"},
+    {"id":"A2_19","sdg":11,"word":"ticket","pos":"noun","def":"a pass that allows entry to an event or site","sentence":"Buy a ticket at the visitor centre.","jp":"チケット","img":"🎟️"},
+    {"id":"A2_20","sdg":4,"word":"tour class","pos":"noun","def":"a short educational session about local culture","sentence":"Attend a short tour class to learn local facts.","jp":"ツアークラス","img":"📚"},
+    {"id":"A2_21","sdg":5,"word":"female guide","pos":"noun","def":"a woman who leads tourists and explains local sites","sentence":"The female guide explains local traditions.","jp":"女性ガイド","img":"👩‍💼"},
+    {"id":"A2_22","sdg":6,"word":"toilet","pos":"noun","def":"a facility providing sanitation for human waste","sentence":"Public toilets are next to the station.","jp":"トイレ","img":"🚻"},
+    {"id":"A2_23","sdg":14,"word":"coral","pos":"noun","def":"a marine organism forming colorful ocean reefs","sentence":"Do not touch the coral when snorkeling.","jp":"サンゴ","img":"🪸"},
+    {"id":"A2_24","sdg":16,"word":"safety","pos":"noun","def":"the condition of being protected from harm","sentence":"Follow safety rules on the boat trip.","jp":"安全","img":"🦺"},
+    {"id":"A2_25","sdg":17,"word":"partner","pos":"noun","def":"an organization working together toward a shared goal","sentence":"The hotel has local partners for community tours.","jp":"パートナー","img":"🤝"}
   ],
   "B1":[
-    {"id":"B1_01","sdg":8,"word":"eco-lodge","pos":"noun","sentence":"Stay at an eco-lodge that supports local jobs.","jp":"エコロッジ","img":"🏕️"},
-    {"id":"B1_02","sdg":12,"word":"sustainable souvenir","pos":"noun","sentence":"Choose sustainable souvenirs made from recycled materials.","jp":"持続可能なお土産","img":"🎁"},
-    {"id":"B1_03","sdg":11,"word":"cultural tour","pos":"noun","sentence":"A cultural tour explains traditions and crafts.","jp":"文化ツアー","img":"🎭"},
-    {"id":"B1_04","sdg":1,"word":"community project","pos":"noun","sentence":"The tour supports a community project for youth.","jp":"地域プロジェクト","img":"🏘️"},
-    {"id":"B1_05","sdg":2,"word":"farm visit","pos":"noun","sentence":"Join a farm visit to meet local farmers.","jp":"農場見学","img":"🚜"},
-    {"id":"B1_06","sdg":3,"word":"wellness","pos":"noun","sentence":"The resort offers wellness activities for guests.","jp":"ウェルネス","img":"🧘"},
-    {"id":"B1_07","sdg":4,"word":"guide training","pos":"noun","sentence":"Guide training improves visitor experiences and skills.","jp":"ガイド研修","img":"🧑‍🏫"},
-    {"id":"B1_08","sdg":6,"word":"water refill","pos":"noun","sentence":"Use water refill stations to avoid bottles.","jp":"給水所","img":"🚰"},
-    {"id":"B1_09","sdg":7,"word":"energy saving","pos":"noun","sentence":"Energy saving in hotels reduces costs and emissions.","jp":"省エネ","img":"💡"},
-    {"id":"B1_10","sdg":8,"word":"fair wage","pos":"noun","sentence":"The company pays a fair wage to staff.","jp":"公正賃金","img":"💴"},
-    {"id":"B1_11","sdg":9,"word":"local craft","pos":"noun","sentence":"Buy local craft at the market to support makers.","jp":"地元の工芸","img":"🧶"},
-    {"id":"B1_12","sdg":12,"word":"compost","pos":"noun","sentence":"Put food scraps in the compost bin at the lodge.","jp":"コンポスト","img":"🪱"},
-    {"id":"B1_13","sdg":10,"word":"inclusive tour","pos":"noun","sentence":"An inclusive tour welcomes visitors with different needs.","jp":"インクルーシブツアー","img":"🧑‍🤝‍🧑"},
-    {"id":"B1_14","sdg":13,"word":"carbon offset","pos":"noun","sentence":"Buy a carbon offset for your flight's emissions.","jp":"カーボンオフセット","img":"🌍"},
-    {"id":"B1_15","sdg":11,"word":"heritage site","pos":"noun","sentence":"Respect signs at the heritage site to protect it.","jp":"遺産の場所","img":"🏺"},
-    {"id":"B1_16","sdg":16,"word":"visitor rules","pos":"noun","sentence":"Follow visitor rules at sacred sites.","jp":"訪問者のルール","img":"📜"},
-    {"id":"B1_17","sdg":1,"word":"microloan","pos":"noun","sentence":"Microloans help local artisans open stalls for tourists.","jp":"マイクロローン","img":"💳"},
-    {"id":"B1_18","sdg":14,"word":"marine park","pos":"noun","sentence":"The marine park protects reefs for snorkelers.","jp":"海洋公園","img":"🌊"},
-    {"id":"B1_19","sdg":15,"word":"birdwatching","pos":"noun","sentence":"Join birdwatching tours to see rare species.","jp":"バードウォッチング","img":"🐦"},
-    {"id":"B1_20","sdg":12,"word":"waste audit","pos":"noun","sentence":"Hotels do a waste audit to reduce garbage.","jp":"廃棄物監査","img":"🧾"},
-    {"id":"B1_21","sdg":4,"word":"interpretation","pos":"noun","sentence":"Good interpretation helps visitors understand sites.","jp":"解説","img":"🗣️"},
-    {"id":"B1_22","sdg":5,"word":"women-led business","pos":"noun","sentence":"Support women-led businesses in the town market.","jp":"女性運営の事業","img":"👩‍🌾"},
-    {"id":"B1_23","sdg":3,"word":"emergency plan","pos":"noun","sentence":"Tours include an emergency plan for safety.","jp":"緊急計画","img":"🚨"},
-    {"id":"B1_24","sdg":6,"word":"water quality","pos":"noun","sentence":"Water quality checks keep beaches safe for swimming.","jp":"水質","img":"🔬"},
-    {"id":"B1_25","sdg":8,"word":"seasonal work","pos":"noun","sentence":"Many tourism jobs are seasonal work during peak months.","jp":"季節労働","img":"📆"}
+    {"id":"B1_01","sdg":8,"word":"eco-lodge","pos":"noun","def":"a nature-friendly accommodation supporting local communities","sentence":"Stay at an eco-lodge that supports local jobs.","jp":"エコロッジ","img":"🏕️"},
+    {"id":"B1_02","sdg":12,"word":"sustainable souvenir","pos":"noun","def":"a keepsake made with minimal environmental harm","sentence":"Choose sustainable souvenirs made from recycled materials.","jp":"持続可能なお土産","img":"🎁"},
+    {"id":"B1_03","sdg":11,"word":"cultural tour","pos":"noun","def":"a guided visit exploring local traditions and crafts","sentence":"A cultural tour explains traditions and crafts.","jp":"文化ツアー","img":"🎭"},
+    {"id":"B1_04","sdg":1,"word":"community project","pos":"noun","def":"an initiative where local residents work together","sentence":"The tour supports a community project for youth.","jp":"地域プロジェクト","img":"🏘️"},
+    {"id":"B1_05","sdg":2,"word":"farm visit","pos":"noun","def":"a trip to a working farm to meet local farmers","sentence":"Join a farm visit to meet local farmers.","jp":"農場見学","img":"🚜"},
+    {"id":"B1_06","sdg":3,"word":"wellness","pos":"noun","def":"a lifestyle of healthy physical and mental practices","sentence":"The resort offers wellness activities for guests.","jp":"ウェルネス","img":"🧘"},
+    {"id":"B1_07","sdg":4,"word":"guide training","pos":"noun","def":"a program teaching skills to lead tourist groups","sentence":"Guide training improves visitor experiences and skills.","jp":"ガイド研修","img":"🧑‍🏫"},
+    {"id":"B1_08","sdg":6,"word":"water refill","pos":"noun","def":"a station where visitors top up reusable bottles","sentence":"Use water refill stations to avoid bottles.","jp":"給水所","img":"🚰"},
+    {"id":"B1_09","sdg":7,"word":"energy saving","pos":"noun","def":"reducing electricity and fuel use to cut emissions","sentence":"Energy saving in hotels reduces costs and emissions.","jp":"省エネ","img":"💡"},
+    {"id":"B1_10","sdg":8,"word":"fair wage","pos":"noun","def":"pay that is just and sufficient for a decent life","sentence":"The company pays a fair wage to staff.","jp":"公正賃金","img":"💴"},
+    {"id":"B1_11","sdg":9,"word":"local craft","pos":"noun","def":"handmade goods produced by artisans in the region","sentence":"Buy local craft at the market to support makers.","jp":"地元の工芸","img":"🧶"},
+    {"id":"B1_12","sdg":12,"word":"compost","pos":"noun","def":"organic waste decomposed into natural soil fertilizer","sentence":"Put food scraps in the compost bin at the lodge.","jp":"コンポスト","img":"🪱"},
+    {"id":"B1_13","sdg":10,"word":"inclusive tour","pos":"noun","def":"a trip designed for visitors of all abilities","sentence":"An inclusive tour welcomes visitors with different needs.","jp":"インクルーシブツアー","img":"🧑‍🤝‍🧑"},
+    {"id":"B1_14","sdg":13,"word":"carbon offset","pos":"noun","def":"a payment compensating for a trip's carbon emissions","sentence":"Buy a carbon offset for your flight's emissions.","jp":"カーボンオフセット","img":"🌍"},
+    {"id":"B1_15","sdg":11,"word":"heritage site","pos":"noun","def":"a place protected for its cultural or historical importance","sentence":"Respect signs at the heritage site to protect it.","jp":"遺産の場所","img":"🏺"},
+    {"id":"B1_16","sdg":16,"word":"visitor rules","pos":"noun","def":"guidelines visitors must follow at sensitive sites","sentence":"Follow visitor rules at sacred sites.","jp":"訪問者のルール","img":"📜"},
+    {"id":"B1_17","sdg":1,"word":"microloan","pos":"noun","def":"a small loan given to help start a local business","sentence":"Microloans help local artisans open stalls for tourists.","jp":"マイクロローン","img":"💳"},
+    {"id":"B1_18","sdg":14,"word":"marine park","pos":"noun","def":"a protected ocean area preserving underwater ecosystems","sentence":"The marine park protects reefs for snorkelers.","jp":"海洋公園","img":"🌊"},
+    {"id":"B1_19","sdg":15,"word":"birdwatching","pos":"noun","def":"observing wild birds in their natural environment","sentence":"Join birdwatching tours to see rare species.","jp":"バードウォッチング","img":"🐦"},
+    {"id":"B1_20","sdg":12,"word":"waste audit","pos":"noun","def":"a review measuring how much waste an operation produces","sentence":"Hotels do a waste audit to reduce garbage.","jp":"廃棄物監査","img":"🧾"},
+    {"id":"B1_21","sdg":4,"word":"interpretation","pos":"noun","def":"explaining a site's meaning and significance to visitors","sentence":"Good interpretation helps visitors understand sites.","jp":"解説","img":"🗣️"},
+    {"id":"B1_22","sdg":5,"word":"women-led business","pos":"noun","def":"a company owned and managed primarily by women","sentence":"Support women-led businesses in the town market.","jp":"女性運営の事業","img":"👩‍🌾"},
+    {"id":"B1_23","sdg":3,"word":"emergency plan","pos":"noun","def":"a procedure for keeping people safe in a crisis","sentence":"Tours include an emergency plan for safety.","jp":"緊急計画","img":"🚨"},
+    {"id":"B1_24","sdg":6,"word":"water quality","pos":"noun","def":"a measure of how safe and clean water is","sentence":"Water quality checks keep beaches safe for swimming.","jp":"水質","img":"🔬"},
+    {"id":"B1_25","sdg":8,"word":"seasonal work","pos":"noun","def":"employment available only during peak tourism periods","sentence":"Many tourism jobs are seasonal work during peak months.","jp":"季節労働","img":"📆"}
   ],
   "B2":[
-    {"id":"B2_01","sdg":11,"word":"destination management","pos":"noun","sentence":"Destination management helps balance visitors and residents.","jp":"目的地管理","img":"🧭"},
-    {"id":"B2_02","sdg":12,"word":"circular economy","pos":"noun","sentence":"Hotels try circular economy ideas to reuse materials.","jp":"循環型経済","img":"🔁"},
-    {"id":"B2_03","sdg":13,"word":"climate adaptation","pos":"noun","sentence":"Tours change schedules as part of climate adaptation.","jp":"気候適応","img":"🌦️"},
-    {"id":"B2_04","sdg":15,"word":"ecosystem restoration","pos":"noun","sentence":"Projects restore habitats to support nature tourism.","jp":"生態系復元","img":"🌱"},
-    {"id":"B2_05","sdg":8,"word":"decent work","pos":"noun","sentence":"Promote decent work practices in hotels and guides.","jp":"尊厳ある仕事","img":"🤝"},
-    {"id":"B2_06","sdg":9,"word":"digital booking","pos":"noun","sentence":"Digital booking helps small operators reach tourists.","jp":"デジタル予約","img":"💻"},
-    {"id":"B2_07","sdg":12,"word":"life-cycle assessment","pos":"noun","sentence":"Assess souvenirs with a life-cycle approach to reduce impact.","jp":"ライフサイクルアセスメント","img":"📊"},
-    {"id":"B2_08","sdg":14,"word":"marine conservation","pos":"noun","sentence":"Marine conservation fees support reef protection.","jp":"海洋保護","img":"🐠"},
-    {"id":"B2_09","sdg":7,"word":"renewable energy","pos":"noun","sentence":"Install renewable energy systems at remote lodges.","jp":"再生可能エネルギー","img":"🔋"},
-    {"id":"B2_10","sdg":6,"word":"greywater reuse","pos":"noun","sentence":"Greywater reuse lowers freshwater use at resorts.","jp":"中水再利用","img":"💧"},
-    {"id":"B2_11","sdg":13,"word":"emissions inventory","pos":"noun","sentence":"Make an emissions inventory for tour transport.","jp":"排出量目録","img":"📋"},
-    {"id":"B2_12","sdg":12,"word":"supplier code","pos":"noun","sentence":"Create a supplier code to keep sourcing sustainable.","jp":"サプライヤーコード","img":"🧾"},
-    {"id":"B2_13","sdg":11,"word":"carrying capacity","pos":"noun","sentence":"Set carrying capacity to avoid overcrowding at sites.","jp":"収容能力","img":"👥"},
-    {"id":"B2_14","sdg":10,"word":"equitable benefit","pos":"noun","sentence":"Plan to share tourism benefits equitably in communities.","jp":"公平な利益配分","img":"⚖️"},
-    {"id":"B2_15","sdg":2,"word":"agro-tourism","pos":"noun","sentence":"Agro-tourism brings visitors to farms for experiences.","jp":"アグリツーリズム","img":"🌾"},
-    {"id":"B2_16","sdg":4,"word":"vocational training","pos":"noun","sentence":"Vocational training raises hospitality service standards locally.","jp":"職業訓練","img":"🏫"},
-    {"id":"B2_17","sdg":8,"word":"entrepreneurship","pos":"noun","sentence":"Support entrepreneurship for local tourism services.","jp":"起業家精神","img":"🚀"},
-    {"id":"B2_18","sdg":12,"word":"waste audit","pos":"noun","sentence":"Conduct a waste audit to improve hotel practices.","jp":"廃棄物監査","img":"🔎"},
-    {"id":"B2_19","sdg":5,"word":"gender mainstreaming","pos":"noun","sentence":"Include gender mainstreaming in tourism employer policies.","jp":"ジェンダー主流化","img":"⚧️"},
-    {"id":"B2_20","sdg":1,"word":"poverty alleviation","pos":"noun","sentence":"Community tours can be part of poverty alleviation.","jp":"貧困軽減","img":"🪙"},
-    {"id":"B2_21","sdg":3,"word":"health protocol","pos":"noun","sentence":"Follow health protocols at tour events and dining.","jp":"健康プロトコル","img":"🩺"},
-    {"id":"B2_22","sdg":9,"word":"infrastructure resilience","pos":"noun","sentence":"Invest in infrastructure resilience for extreme weather.","jp":"インフラ強靭性","img":"🏗️"},
-    {"id":"B2_23","sdg":14,"word":"no-take zone","pos":"noun","sentence":"No-take zones help fish stocks recover for diving.","jp":"採取禁止区域","img":"🚫🐟"},
-    {"id":"B2_24","sdg":11,"word":"heritage management","pos":"noun","sentence":"Good heritage management protects cultural sites.","jp":"遺産管理","img":"🕰️"},
-    {"id":"B2_25","sdg":13,"word":"offset program","pos":"noun","sentence":"Offer an offset program to reduce trip carbon impact.","jp":"オフセットプログラム","img":"🌳"}
+    {"id":"B2_01","sdg":11,"word":"destination management","pos":"noun","def":"planning tourism to balance visitors and local residents","sentence":"Destination management helps balance visitors and residents.","jp":"目的地管理","img":"🧭"},
+    {"id":"B2_02","sdg":12,"word":"circular economy","pos":"noun","def":"a system that reuses materials to eliminate waste","sentence":"Hotels try circular economy ideas to reuse materials.","jp":"循環型経済","img":"🔁"},
+    {"id":"B2_03","sdg":13,"word":"climate adaptation","pos":"noun","def":"adjusting practices to cope with changing climate conditions","sentence":"Tours change schedules as part of climate adaptation.","jp":"気候適応","img":"🌦️"},
+    {"id":"B2_04","sdg":15,"word":"ecosystem restoration","pos":"noun","def":"rebuilding degraded natural habitats to improve biodiversity","sentence":"Projects restore habitats to support nature tourism.","jp":"生態系復元","img":"🌱"},
+    {"id":"B2_05","sdg":8,"word":"decent work","pos":"noun","def":"employment offering fair pay, safety, and dignity","sentence":"Promote decent work practices in hotels and guides.","jp":"尊厳ある仕事","img":"🤝"},
+    {"id":"B2_06","sdg":9,"word":"digital booking","pos":"noun","def":"reserving services online through apps or websites","sentence":"Digital booking helps small operators reach tourists.","jp":"デジタル予約","img":"💻"},
+    {"id":"B2_07","sdg":12,"word":"life-cycle assessment","pos":"noun","def":"measuring a product's total environmental impact end-to-end","sentence":"Assess souvenirs with a life-cycle approach to reduce impact.","jp":"ライフサイクルアセスメント","img":"📊"},
+    {"id":"B2_08","sdg":14,"word":"marine conservation","pos":"noun","def":"protecting ocean environments and the species within them","sentence":"Marine conservation fees support reef protection.","jp":"海洋保護","img":"🐠"},
+    {"id":"B2_09","sdg":7,"word":"renewable energy","pos":"noun","def":"power generated from naturally replenishing sources like sun or wind","sentence":"Install renewable energy systems at remote lodges.","jp":"再生可能エネルギー","img":"🔋"},
+    {"id":"B2_10","sdg":6,"word":"greywater reuse","pos":"noun","def":"recycling used sink or shower water for irrigation","sentence":"Greywater reuse lowers freshwater use at resorts.","jp":"中水再利用","img":"💧"},
+    {"id":"B2_11","sdg":13,"word":"emissions inventory","pos":"noun","def":"a record of all greenhouse gases released by an operation","sentence":"Make an emissions inventory for tour transport.","jp":"排出量目録","img":"📋"},
+    {"id":"B2_12","sdg":12,"word":"supplier code","pos":"noun","def":"rules that vendors must meet to be a supplier","sentence":"Create a supplier code to keep sourcing sustainable.","jp":"サプライヤーコード","img":"🧾"},
+    {"id":"B2_13","sdg":11,"word":"carrying capacity","pos":"noun","def":"the maximum visitors a site can safely sustain","sentence":"Set carrying capacity to avoid overcrowding at sites.","jp":"収容能力","img":"👥"},
+    {"id":"B2_14","sdg":10,"word":"equitable benefit","pos":"noun","def":"ensuring fair sharing of tourism income among all residents","sentence":"Plan to share tourism benefits equitably in communities.","jp":"公平な利益配分","img":"⚖️"},
+    {"id":"B2_15","sdg":2,"word":"agro-tourism","pos":"noun","def":"tourism centred on visits to working farms and rural settings","sentence":"Agro-tourism brings visitors to farms for experiences.","jp":"アグリツーリズム","img":"🌾"},
+    {"id":"B2_16","sdg":4,"word":"vocational training","pos":"noun","def":"practical skills education for a specific trade or profession","sentence":"Vocational training raises hospitality service standards locally.","jp":"職業訓練","img":"🏫"},
+    {"id":"B2_17","sdg":8,"word":"entrepreneurship","pos":"noun","def":"starting and running new businesses despite financial risk","sentence":"Support entrepreneurship for local tourism services.","jp":"起業家精神","img":"🚀"},
+    {"id":"B2_18","sdg":12,"word":"waste audit","pos":"noun","def":"an assessment of waste types and quantities in an operation","sentence":"Conduct a waste audit to improve hotel practices.","jp":"廃棄物監査","img":"🔎"},
+    {"id":"B2_19","sdg":5,"word":"gender mainstreaming","pos":"noun","def":"integrating gender equality into all policies and programs","sentence":"Include gender mainstreaming in tourism employer policies.","jp":"ジェンダー主流化","img":"⚧️"},
+    {"id":"B2_20","sdg":1,"word":"poverty alleviation","pos":"noun","def":"programs and policies that reduce economic hardship","sentence":"Community tours can be part of poverty alleviation.","jp":"貧困軽減","img":"🪙"},
+    {"id":"B2_21","sdg":3,"word":"health protocol","pos":"noun","def":"required steps to maintain health and prevent illness","sentence":"Follow health protocols at tour events and dining.","jp":"健康プロトコル","img":"🩺"},
+    {"id":"B2_22","sdg":9,"word":"infrastructure resilience","pos":"noun","def":"the ability of systems to withstand and recover from shocks","sentence":"Invest in infrastructure resilience for extreme weather.","jp":"インフラ強靭性","img":"🏗️"},
+    {"id":"B2_23","sdg":14,"word":"no-take zone","pos":"noun","def":"a protected area where removing wildlife or resources is banned","sentence":"No-take zones help fish stocks recover for diving.","jp":"採取禁止区域","img":"🚫🐟"},
+    {"id":"B2_24","sdg":11,"word":"heritage management","pos":"noun","def":"the strategic care and protection of historically significant sites","sentence":"Good heritage management protects cultural sites.","jp":"遺産管理","img":"🕰️"},
+    {"id":"B2_25","sdg":13,"word":"offset program","pos":"noun","def":"a scheme compensating emissions by funding green projects","sentence":"Offer an offset program to reduce trip carbon impact.","jp":"オフセットプログラム","img":"🌳"}
   ],
   "C1":[
-    {"id":"C1_01","sdg":11,"word":"sustainable infrastructure","pos":"noun","sentence":"Plan sustainable infrastructure for tourism growth in towns.","jp":"持続可能なインフラ","img":"🏛️"},
-    {"id":"C1_02","sdg":12,"word":"sustainable procurement","pos":"noun","sentence":"Adopt sustainable procurement for hotel supplies.","jp":"持続可能な調達","img":"📦"},
-    {"id":"C1_03","sdg":13,"word":"net-zero target","pos":"noun","sentence":"Set a net-zero target for a chain of hotels.","jp":"ネットゼロ目標","img":"0️⃣"},
-    {"id":"C1_04","sdg":15,"word":"ecosystem valuation","pos":"noun","sentence":"Value ecosystems to account for tourism benefits.","jp":"生態系評価","img":"💚"},
-    {"id":"C1_05","sdg":17,"word":"financing mechanisms","pos":"noun","sentence":"Find financing mechanisms for community tourism projects.","jp":"資金調達手段","img":"💰"},
-    {"id":"C1_06","sdg":16,"word":"good governance","pos":"noun","sentence":"Good governance supports fair tourism development.","jp":"良い統治","img":"🏛️"},
-    {"id":"C1_07","sdg":9,"word":"green certification","pos":"noun","sentence":"Green certification signals sustainability to travellers.","jp":"グリーン認証","img":"✅"},
-    {"id":"C1_08","sdg":12,"word":"eco-label","pos":"noun","sentence":"Apply an eco-label to sustainable hotels.","jp":"エコラベル","img":"🏷️"},
-    {"id":"C1_09","sdg":1,"word":"social protection","pos":"noun","sentence":"Social protection helps tourism workers in crises.","jp":"社会的保護","img":"🛡️"},
-    {"id":"C1_10","sdg":5,"word":"gender-responsive budgeting","pos":"noun","sentence":"Use gender-responsive budgeting in tourism plans.","jp":"ジェンダー対応予算","img":"📊"},
-    {"id":"C1_11","sdg":14,"word":"blue economy","pos":"noun","sentence":"The blue economy supports ocean-based tourism sustainably.","jp":"ブルーエコノミー","img":"🌊"},
-    {"id":"C1_12","sdg":4,"word":"skills accreditation","pos":"noun","sentence":"Skills accreditation ensures quality guide services.","jp":"技能認定","img":"🎓"},
-    {"id":"C1_13","sdg":10,"word":"redistributive policy","pos":"noun","sentence":"Redistributive policy can share tourism revenues fairly.","jp":"再分配政策","img":"🔄"},
-    {"id":"C1_14","sdg":3,"word":"health equity","pos":"noun","sentence":"Health equity ensures care for hosts and visitors.","jp":"健康の公平性","img":"⚕️"},
-    {"id":"C1_15","sdg":2,"word":"value-added agriculture","pos":"noun","sentence":"Value-added agriculture supports farm-to-visitor products.","jp":"付加価値農業","img":"🥖"},
-    {"id":"C1_16","sdg":11,"word":"creative placemaking","pos":"noun","sentence":"Creative placemaking turns spaces into cultural hubs.","jp":"クリエイティブプレイスメイキング","img":"🎨"},
-    {"id":"C1_17","sdg":12,"word":"extended producer responsibility","pos":"noun","sentence":"EPR reduces packaging waste from hospitality suppliers.","jp":"生産者責任の拡大","img":"🏷️"},
-    {"id":"C1_18","sdg":13,"word":"vulnerability assessment","pos":"noun","sentence":"Run vulnerability assessments for coastal tourism assets.","jp":"脆弱性評価","img":"📉"},
-    {"id":"C1_19","sdg":15,"word":"conservation finance","pos":"noun","sentence":"Use conservation finance to protect natural attractions.","jp":"保全ファイナンス","img":"💵"},
-    {"id":"C1_20","sdg":8,"word":"worker representation","pos":"noun","sentence":"Worker representation improves conditions for staff.","jp":"労働者代表","img":"🪧"},
-    {"id":"C1_21","sdg":9,"word":"sustainable mobility","pos":"noun","sentence":"Promote sustainable mobility to reduce car use.","jp":"持続可能な移動手段","img":"🚴"},
-    {"id":"C1_22","sdg":17,"word":"knowledge exchange","pos":"noun","sentence":"Knowledge exchange spreads best practices across regions.","jp":"知識交換","img":"🔁"},
-    {"id":"C1_23","sdg":1,"word":"market access","pos":"noun","sentence":"Improve market access for local artisans to sell to tourists.","jp":"市場アクセス","img":"🛍️"},
-    {"id":"C1_24","sdg":12,"word":"supplier code","pos":"noun","sentence":"A supplier code enforces environmental standards.","jp":"サプライヤーコード","img":"📜"},
-    {"id":"C1_25","sdg":16,"word":"accountability","pos":"noun","sentence":"Transparency and accountability build trust in tourism projects.","jp":"説明責任","img":"🧾"}
+    {"id":"C1_01","sdg":11,"word":"sustainable infrastructure","pos":"noun","def":"long-lasting facilities designed to minimize environmental impact","sentence":"Plan sustainable infrastructure for tourism growth in towns.","jp":"持続可能なインフラ","img":"🏛️"},
+    {"id":"C1_02","sdg":12,"word":"sustainable procurement","pos":"noun","def":"buying goods and services from environmentally responsible sources","sentence":"Adopt sustainable procurement for hotel supplies.","jp":"持続可能な調達","img":"📦"},
+    {"id":"C1_03","sdg":13,"word":"net-zero target","pos":"noun","def":"a goal of balancing all carbon emissions with removals","sentence":"Set a net-zero target for a chain of hotels.","jp":"ネットゼロ目標","img":"0️⃣"},
+    {"id":"C1_04","sdg":15,"word":"ecosystem valuation","pos":"noun","def":"assigning economic worth to nature's services and benefits","sentence":"Value ecosystems to account for tourism benefits.","jp":"生態系評価","img":"💚"},
+    {"id":"C1_05","sdg":17,"word":"financing mechanisms","pos":"noun","def":"methods and instruments used to fund sustainable projects","sentence":"Find financing mechanisms for community tourism projects.","jp":"資金調達手段","img":"💰"},
+    {"id":"C1_06","sdg":16,"word":"good governance","pos":"noun","def":"transparent, accountable, and fair management of public affairs","sentence":"Good governance supports fair tourism development.","jp":"良い統治","img":"🏛️"},
+    {"id":"C1_07","sdg":9,"word":"green certification","pos":"noun","def":"an official label confirming a business meets sustainability standards","sentence":"Green certification signals sustainability to travellers.","jp":"グリーン認証","img":"✅"},
+    {"id":"C1_08","sdg":12,"word":"eco-label","pos":"noun","def":"a mark showing a product or service meets sustainability criteria","sentence":"Apply an eco-label to sustainable hotels.","jp":"エコラベル","img":"🏷️"},
+    {"id":"C1_09","sdg":1,"word":"social protection","pos":"noun","def":"government programs supporting vulnerable people during hardship","sentence":"Social protection helps tourism workers in crises.","jp":"社会的保護","img":"🛡️"},
+    {"id":"C1_10","sdg":5,"word":"gender-responsive budgeting","pos":"noun","def":"allocating public funds with gender equality outcomes in mind","sentence":"Use gender-responsive budgeting in tourism plans.","jp":"ジェンダー対応予算","img":"📊"},
+    {"id":"C1_11","sdg":14,"word":"blue economy","pos":"noun","def":"economic activities sustainably using ocean and coastal resources","sentence":"The blue economy supports ocean-based tourism sustainably.","jp":"ブルーエコノミー","img":"🌊"},
+    {"id":"C1_12","sdg":4,"word":"skills accreditation","pos":"noun","def":"official recognition that a training program meets quality standards","sentence":"Skills accreditation ensures quality guide services.","jp":"技能認定","img":"🎓"},
+    {"id":"C1_13","sdg":10,"word":"redistributive policy","pos":"noun","def":"a government approach that transfers resources to reduce inequality","sentence":"Redistributive policy can share tourism revenues fairly.","jp":"再分配政策","img":"🔄"},
+    {"id":"C1_14","sdg":3,"word":"health equity","pos":"noun","def":"fair access to healthcare regardless of background or location","sentence":"Health equity ensures care for hosts and visitors.","jp":"健康の公平性","img":"⚕️"},
+    {"id":"C1_15","sdg":2,"word":"value-added agriculture","pos":"noun","def":"processing raw farm products into higher-value food or goods","sentence":"Value-added agriculture supports farm-to-visitor products.","jp":"付加価値農業","img":"🥖"},
+    {"id":"C1_16","sdg":11,"word":"creative placemaking","pos":"noun","def":"using arts and culture to revitalize public spaces","sentence":"Creative placemaking turns spaces into cultural hubs.","jp":"クリエイティブプレイスメイキング","img":"🎨"},
+    {"id":"C1_17","sdg":12,"word":"extended producer responsibility","pos":"noun","def":"requiring manufacturers to manage their products after disposal","sentence":"EPR reduces packaging waste from hospitality suppliers.","jp":"生産者責任の拡大","img":"🏷️"},
+    {"id":"C1_18","sdg":13,"word":"vulnerability assessment","pos":"noun","def":"identifying a destination's weaknesses to natural or economic shocks","sentence":"Run vulnerability assessments for coastal tourism assets.","jp":"脆弱性評価","img":"📉"},
+    {"id":"C1_19","sdg":15,"word":"conservation finance","pos":"noun","def":"funding strategies that protect natural environments and biodiversity","sentence":"Use conservation finance to protect natural attractions.","jp":"保全ファイナンス","img":"💵"},
+    {"id":"C1_20","sdg":8,"word":"worker representation","pos":"noun","def":"having employees participate in decisions about their workplace","sentence":"Worker representation improves conditions for staff.","jp":"労働者代表","img":"🪧"},
+    {"id":"C1_21","sdg":9,"word":"sustainable mobility","pos":"noun","def":"low-carbon transport options accessible to all travelers","sentence":"Promote sustainable mobility to reduce car use.","jp":"持続可能な移動手段","img":"🚴"},
+    {"id":"C1_22","sdg":17,"word":"knowledge exchange","pos":"noun","def":"the sharing of expertise and best practices between organizations","sentence":"Knowledge exchange spreads best practices across regions.","jp":"知識交換","img":"🔁"},
+    {"id":"C1_23","sdg":1,"word":"market access","pos":"noun","def":"the ability of producers to sell their goods in wider markets","sentence":"Improve market access for local artisans to sell to tourists.","jp":"市場アクセス","img":"🛍️"},
+    {"id":"C1_24","sdg":12,"word":"supplier code","pos":"noun","def":"a standard setting ethical and environmental supplier requirements","sentence":"A supplier code enforces environmental standards.","jp":"サプライヤーコード","img":"📜"},
+    {"id":"C1_25","sdg":16,"word":"accountability","pos":"noun","def":"being required to explain and justify one's decisions and actions","sentence":"Transparency and accountability build trust in tourism projects.","jp":"説明責任","img":"🧾"}
   ],
   "C2":[
-    {"id":"C2_01","sdg":13,"word":"climate finance","pos":"noun","sentence":"Use climate finance to protect coastal tourism infrastructure.","jp":"気候資金","img":"🏦"},
-    {"id":"C2_02","sdg":14,"word":"blue carbon","pos":"noun","sentence":"Blue carbon projects protect mangroves and sequester carbon.","jp":"ブルーカーボン","img":"🪵"},
-    {"id":"C2_03","sdg":15,"word":"landscape conservation","pos":"noun","sentence":"Landscape-scale conservation supports wildlife corridors for tourism.","jp":"景観保全","img":"🗺️"},
-    {"id":"C2_04","sdg":1,"word":"structural reform","pos":"noun","sentence":"Structural reform in policy can redistribute tourism revenue fairly.","jp":"構造改革","img":"🏛️"},
-    {"id":"C2_05","sdg":10,"word":"redistributive justice","pos":"noun","sentence":"Design redistributive justice to share benefits from tourism growth.","jp":"再分配の正義","img":"⚖️"},
-    {"id":"C2_06","sdg":9,"word":"innovation ecosystem","pos":"noun","sentence":"Innovation ecosystems help new sustainable tourism businesses emerge.","jp":"イノベーションエコシステム","img":"🧩"},
-    {"id":"C2_07","sdg":12,"word":"supply-chain decarbonisation","pos":"noun","sentence":"Decarbonise supply chains for sustainable hotel procurement.","jp":"サプライチェーン脱炭素化","img":"🚚"},
-    {"id":"C2_08","sdg":13,"word":"transformational mitigation","pos":"noun","sentence":"Support transformational mitigation to shift tourism off fossil fuels.","jp":"変革的緩和策","img":"🔧"},
-    {"id":"C2_09","sdg":16,"word":"institutional accountability","pos":"noun","sentence":"Institutional accountability ensures community voices in tourism policy.","jp":"制度的説明責任","img":"🏷️"},
-    {"id":"C2_10","sdg":17,"word":"global partnerships","pos":"noun","sentence":"Global partnerships fund sustainable tourism transitions.","jp":"グローバルパートナーシップ","img":"🌐"},
-    {"id":"C2_11","sdg":6,"word":"integrated water management","pos":"noun","sentence":"Integrated water management secures long-term water for communities and tourism.","jp":"統合的水管理","img":"🚿"},
-    {"id":"C2_12","sdg":5,"word":"gender-transformative","pos":"adj","sentence":"Design gender-transformative programs to change power relations.","jp":"ジェンダー変革型","img":"♀️"},
-    {"id":"C2_13","sdg":3,"word":"one-health","pos":"noun","sentence":"Use a one-health approach linking human, animal and environment health.","jp":"ワンヘルス","img":"🧬"},
-    {"id":"C2_14","sdg":8,"word":"decent work agenda","pos":"noun","sentence":"Adopt a decent work agenda across tourism supply chains.","jp":"ディーセントワーク議題","img":"📋"},
-    {"id":"C2_15","sdg":2,"word":"food systems transformation","pos":"noun","sentence":"Transform food systems to support resilient local supply for hospitality.","jp":"食料システム変革","img":"🥗"},
-    {"id":"C2_16","sdg":11,"word":"adaptive reuse","pos":"noun","sentence":"Adaptive reuse of buildings creates unique tourism spaces.","jp":"適応的再利用","img":"🏚️"},
-    {"id":"C2_17","sdg":14,"word":"marine governance","pos":"noun","sentence":"Strong marine governance secures resources for coastal tourism.","jp":"海洋ガバナンス","img":"⚓"},
-    {"id":"C2_18","sdg":15,"word":"rewilding","pos":"noun","sentence":"Rewilding can restore habitats and create nature tourism attractions.","jp":"リワイディング","img":"🦌"},
-    {"id":"C2_19","sdg":12,"word":"materiality assessment","pos":"noun","sentence":"A materiality assessment sets priorities for sustainability reporting.","jp":"重要性評価","img":"📑"},
-    {"id":"C2_20","sdg":7,"word":"energy justice","pos":"noun","sentence":"Energy justice ensures transitions do not unfairly burden communities.","jp":"エネルギー正義","img":"⚡"},
-    {"id":"C2_21","sdg":1,"word":"safety net","pos":"noun","sentence":"Create a safety net for tourism workers during crises.","jp":"セーフティネット","img":"🛟"},
-    {"id":"C2_22","sdg":17,"word":"south-south cooperation","pos":"noun","sentence":"South–South cooperation shares best practices between countries.","jp":"南南協力","img":"🤝"},
-    {"id":"C2_23","sdg":16,"word":"judicial oversight","pos":"noun","sentence":"Judicial oversight enforces protected area rules affecting tours.","jp":"司法監督","img":"⚖️"},
-    {"id":"C2_24","sdg":9,"word":"place-based innovation","pos":"noun","sentence":"Place-based innovation creates local tourism products with tech and culture.","jp":"プレイスベースイノベーション","img":"📍"},
-    {"id":"C2_25","sdg":10,"word":"progressive redistribution","pos":"noun","sentence":"Progressive redistribution of tourism taxes funds local services.","jp":"進歩的再分配","img":"🔁"}
+    {"id":"C2_01","sdg":13,"word":"climate finance","pos":"noun","def":"funding directed at mitigating and adapting to climate change","sentence":"Use climate finance to protect coastal tourism infrastructure.","jp":"気候資金","img":"🏦"},
+    {"id":"C2_02","sdg":14,"word":"blue carbon","pos":"noun","def":"carbon stored in coastal ecosystems like mangroves and seagrass","sentence":"Blue carbon projects protect mangroves and sequester carbon.","jp":"ブルーカーボン","img":"🪵"},
+    {"id":"C2_03","sdg":15,"word":"landscape conservation","pos":"noun","def":"protecting large natural areas to maintain biodiversity and ecosystems","sentence":"Landscape-scale conservation supports wildlife corridors for tourism.","jp":"景観保全","img":"🗺️"},
+    {"id":"C2_04","sdg":1,"word":"structural reform","pos":"noun","def":"fundamental changes to systems or policies to improve outcomes","sentence":"Structural reform in policy can redistribute tourism revenue fairly.","jp":"構造改革","img":"🏛️"},
+    {"id":"C2_05","sdg":10,"word":"redistributive justice","pos":"noun","def":"fairness in how economic benefits and burdens are distributed","sentence":"Design redistributive justice to share benefits from tourism growth.","jp":"再分配の正義","img":"⚖️"},
+    {"id":"C2_06","sdg":9,"word":"innovation ecosystem","pos":"noun","def":"a network of organizations fostering the creation of new ideas","sentence":"Innovation ecosystems help new sustainable tourism businesses emerge.","jp":"イノベーションエコシステム","img":"🧩"},
+    {"id":"C2_07","sdg":12,"word":"supply-chain decarbonisation","pos":"noun","def":"reducing greenhouse gases throughout a product's entire supply chain","sentence":"Decarbonise supply chains for sustainable hotel procurement.","jp":"サプライチェーン脱炭素化","img":"🚚"},
+    {"id":"C2_08","sdg":13,"word":"transformational mitigation","pos":"noun","def":"deep systemic change to dramatically cut greenhouse gas emissions","sentence":"Support transformational mitigation to shift tourism off fossil fuels.","jp":"変革的緩和策","img":"🔧"},
+    {"id":"C2_09","sdg":16,"word":"institutional accountability","pos":"noun","def":"the obligation of organizations to answer for their governance decisions","sentence":"Institutional accountability ensures community voices in tourism policy.","jp":"制度的説明責任","img":"🏷️"},
+    {"id":"C2_10","sdg":17,"word":"global partnerships","pos":"noun","def":"international collaborations working toward shared sustainability goals","sentence":"Global partnerships fund sustainable tourism transitions.","jp":"グローバルパートナーシップ","img":"🌐"},
+    {"id":"C2_11","sdg":6,"word":"integrated water management","pos":"noun","def":"coordinating water use across sectors to ensure long-term supply","sentence":"Integrated water management secures long-term water for communities and tourism.","jp":"統合的水管理","img":"🚿"},
+    {"id":"C2_12","sdg":5,"word":"gender-transformative","pos":"adj","def":"aiming to change structural gender inequalities in society","sentence":"Design gender-transformative programs to change power relations.","jp":"ジェンダー変革型","img":"♀️"},
+    {"id":"C2_13","sdg":3,"word":"one-health","pos":"noun","def":"linking human, animal, and environmental health in one approach","sentence":"Use a one-health approach linking human, animal and environment health.","jp":"ワンヘルス","img":"🧬"},
+    {"id":"C2_14","sdg":8,"word":"decent work agenda","pos":"noun","def":"a policy framework promoting fair, safe, and dignified employment","sentence":"Adopt a decent work agenda across tourism supply chains.","jp":"ディーセントワーク議題","img":"📋"},
+    {"id":"C2_15","sdg":2,"word":"food systems transformation","pos":"noun","def":"redesigning food production and supply for resilience and sustainability","sentence":"Transform food systems to support resilient local supply for hospitality.","jp":"食料システム変革","img":"🥗"},
+    {"id":"C2_16","sdg":11,"word":"adaptive reuse","pos":"noun","def":"repurposing existing buildings for new uses to reduce demolition waste","sentence":"Adaptive reuse of buildings creates unique tourism spaces.","jp":"適応的再利用","img":"🏚️"},
+    {"id":"C2_17","sdg":14,"word":"marine governance","pos":"noun","def":"rules and institutions managing sustainable use of ocean resources","sentence":"Strong marine governance secures resources for coastal tourism.","jp":"海洋ガバナンス","img":"⚓"},
+    {"id":"C2_18","sdg":15,"word":"rewilding","pos":"noun","def":"restoring ecosystems by reintroducing native species and reducing intervention","sentence":"Rewilding can restore habitats and create nature tourism attractions.","jp":"リワイディング","img":"🦌"},
+    {"id":"C2_19","sdg":12,"word":"materiality assessment","pos":"noun","def":"identifying the most important sustainability topics for an organization","sentence":"A materiality assessment sets priorities for sustainability reporting.","jp":"重要性評価","img":"📑"},
+    {"id":"C2_20","sdg":7,"word":"energy justice","pos":"noun","def":"ensuring fair access to affordable, clean energy for all communities","sentence":"Energy justice ensures transitions do not unfairly burden communities.","jp":"エネルギー正義","img":"⚡"},
+    {"id":"C2_21","sdg":1,"word":"safety net","pos":"noun","def":"a support system protecting people from extreme economic hardship","sentence":"Create a safety net for tourism workers during crises.","jp":"セーフティネット","img":"🛟"},
+    {"id":"C2_22","sdg":17,"word":"south-south cooperation","pos":"noun","def":"developing countries sharing knowledge and resources with each other","sentence":"South–South cooperation shares best practices between countries.","jp":"南南協力","img":"🤝"},
+    {"id":"C2_23","sdg":16,"word":"judicial oversight","pos":"noun","def":"monitoring by courts to ensure laws and rights are respected","sentence":"Judicial oversight enforces protected area rules affecting tours.","jp":"司法監督","img":"⚖️"},
+    {"id":"C2_24","sdg":9,"word":"place-based innovation","pos":"noun","def":"developing new solutions grounded in the specific needs of a locale","sentence":"Place-based innovation creates local tourism products with tech and culture.","jp":"プレイスベースイノベーション","img":"📍"},
+    {"id":"C2_25","sdg":10,"word":"progressive redistribution","pos":"noun","def":"transferring resources from higher-income groups to fund public services","sentence":"Progressive redistribution of tourism taxes funds local services.","jp":"進歩的再分配","img":"🔁"}
   ]
 };
 
@@ -401,18 +401,28 @@ function showCard(){
 /* Flip reveal */
 function flipCard(){ const back = document.getElementById('back'); if(!back) return; showingBack = !showingBack; back.style.display = showingBack ? 'block' : 'none'; }
 
+/* Pick distractors: same level, prefer same pos + same sdg, then same pos, then any */
+function pickDistractors(level, correctItem, count){
+  const pool = (vocab[level] || []).filter(i => i.id !== correctItem.id && i.def && i.def !== correctItem.def);
+  let candidates = pool.filter(p => p.pos === correctItem.pos && p.sdg === correctItem.sdg);
+  if(candidates.length < count) candidates = candidates.concat(pool.filter(p => p.pos === correctItem.pos && p.sdg !== correctItem.sdg));
+  if(candidates.length < count) candidates = candidates.concat(pool.filter(p => p.pos !== correctItem.pos));
+  const uniqueCandidates = [...new Map(candidates.map(c => [c.id, c])).values()];
+  return shuffle(uniqueCandidates).slice(0, count);
+}
+
 /* Quiz options */
 function showQuizOptions(item){
-  const pool = session.items.slice();
-  const others = pool.filter(p => p.id !== item.id);
-  const opts = shuffle([item, ...(others.slice(0,3))]).slice(0, Math.min(4,pool.length));
+  const level = item.id.split('_')[0];
+  const distractors = pickDistractors(level, item, 3);
+  const opts = shuffle([item, ...distractors]).slice(0, Math.min(4, (vocab[level]||[]).length));
   const optWrap = document.createElement('div'); optWrap.style.width='100%'; optWrap.style.marginTop='12px';
-  optWrap.innerHTML = opts.map((o,i)=>`<button class="option" data-idx="${i}">${escapeHtml(o.jp)}</button>`).join('');
+  optWrap.innerHTML = opts.map(o=>`<button class="option" data-id="${escapeHtml(o.id)}">${escapeHtml(o.def)}</button>`).join('');
   cardArea.appendChild(optWrap);
   optWrap.querySelectorAll('.option').forEach(btn=>{
     btn.addEventListener('click', ()=>{
-      const chosen = opts[Number(btn.getAttribute('data-idx'))];
-      if(chosen.id === item.id){ btn.classList.add('correct'); state.xp += 10; recordProgress(item, true); } else { btn.classList.add('wrong'); recordProgress(item, false); }
+      const chosenId = btn.getAttribute('data-id');
+      if(chosenId === item.id){ btn.classList.add('correct'); state.xp += 10; recordProgress(item, true); } else { btn.classList.add('wrong'); recordProgress(item, false); }
       setTimeout(()=>{ session.index++; if(session.index >= session.items.length) finishSession(); else showCard(); }, 700);
     });
   });
